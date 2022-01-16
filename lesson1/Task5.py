@@ -9,9 +9,9 @@ if revenue > cost:
     profit = revenue - cost
     print("Прибыль составила: ", profit)
     profitability = (profit / revenue) * 100
-    print(f"Рентабельность составила: {profitability} %")
+    print(f"Рентабельность составила: {profitability:.2f} %")
     prof_emp = profit / employees
-    print("Прибыль в расчете на 1-го сотркдника за период составила: ", prof_emp)
+    print(f"Прибыль в расчете на 1-го сотркдника за период составила: {prof_emp:.2f}", )
 else:
     loss = cost - revenue
     print(f"Вы не заработали в этом периоде. Ваши убытки составили: {loss}. Расчет прибыли на 1-го сотрудника не произведен.")
